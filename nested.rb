@@ -57,7 +57,7 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
-		 return programmer_hash[dennis_ritchie][languages]
+		 return programmer_hash[:dennis_ritchie][:languages]
 end
 
 def adding_matz
@@ -82,7 +82,7 @@ def adding_matz
           :languages => ["C"]
         }
      }
-	programmer_hash << :yukihiro_matsumoto
+	programmer_hash[0] << :yukihiro_matsumoto
 	return programmer_hash
 
 end
